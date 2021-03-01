@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="3dp"
+    android:layout_height="205dp">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="181dp"
+            android:layout_height="205dp"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/imageLogo02"
+                android:scaleType="centerCrop">
+            </ImageView>
+
+                <TextView
+                    android:id="@+id/txtNews02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageLogo02"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/vollkorn"
+                    android:gravity="center_horizontal"
+                    android:maxLines="3"
+                    android:textAlignment="center"
+                    android:textColor="#225180"></TextView>
+
+
+                <TextView
+                    android:id="@+id/readmreBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtNews02"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/buenard_bold"
+                    android:gravity="center_horizontal"
+                    android:text="Read More"
+                    android:textAlignment="center"
+                    android:textColor="#F34949"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

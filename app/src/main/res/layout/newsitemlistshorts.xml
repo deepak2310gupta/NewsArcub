@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    app:cardCornerRadius="1dp"
+    android:padding="3dp"
+    android:layout_height="115dp">
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="83dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/imageLogo011"
+                android:scaleType="centerCrop"
+                android:layout_height="98dp">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/newsHead1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="4dp"
+                android:layout_toEndOf="@id/imageLogo011"
+                android:layout_toRightOf="@id/imageLogo011"
+                android:fontFamily="@font/alike"
+                android:maxLines="3"
+                android:textColor="#000"
+                android:textSize="15sp"></TextView>
+
+            <TextView
+                android:id="@+id/txtTopNews1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toEndOf="@id/imageLogo011"
+                android:layout_toRightOf="@id/imageLogo011"
+                android:textStyle="bold"
+                android:textSize="13sp"></TextView>
+
+            <TextView
+                android:id="@+id/timeNews1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toEndOf="@id/txtTopNews1"
+                android:layout_toRightOf="@id/txtTopNews1"
+                android:textStyle="bold"
+                android:textSize="13sp">
+            </TextView>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true">
+
+                               <ImageView
+                    android:id="@+id/shareBtnNews"
+                    android:layout_width="25dp"
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:layout_margin="2dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/share"></ImageView>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

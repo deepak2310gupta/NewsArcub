@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NewSuggestedFragment">
+
+
+    <TextView
+        android:id="@+id/txtChoosePreferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/montserrat_alternates_bold"
+        android:padding="5dp"
+        android:text="Choose Your Preferences"
+        android:textColor="#0C3C6C"
+        android:textSize="25sp"></TextView>
+
+
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/txtChoosePreferences"
+        android:id="@+id/businessPrefer"
+        android:background="@drawable/cardbgview"
+        android:layout_margin="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txtBusiness"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="@font/candal"
+                android:gravity="center_horizontal"
+                android:text="Business"
+                android:textAlignment="center"
+                android:textColor="#0C0C0C"
+                android:textSize="17sp"></TextView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/txtChoosePreferences"
+        android:background="@drawable/cardbgview"
+        android:id="@+id/generalPrefer"
+        android:layout_toEndOf="@+id/businessPrefer"
+        android:layout_margin="6dp"
+        android:layout_toRightOf="@+id/businessPrefer">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txtGeneral"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="@font/candal"
+                android:gravity="center_horizontal"
+                android:text="General"
+                android:textAlignment="center"
+                android:textColor="#0C0C0C"
+                android:textSize="17sp"></TextView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/txtChoosePreferences"
+        android:layout_toEndOf="@id/generalPrefer"
+        android:background="@drawable/cardbgview"
+        android:layout_margin="6dp"
+        android:id="@+id/sportsPrefer"
+        android:layout_toRightOf="@id/generalPrefer">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txtSports"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="@font/candal"
+                android:gravity="center_horizontal"
+                android:text="Sports"
+                android:textAlignment="center"
+                android:textColor="#0C0C0C"
+                android:textSize="17sp"></TextView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cardbgview"
+        android:layout_below="@+id/businessPrefer"
+        android:id="@+id/healthPrefer"
+        android:layout_margin="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txtHealth"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="@font/candal"
+                android:gravity="center_horizontal"
+                android:text="Health"
+                android:textAlignment="center"
+                android:textColor="#0C0C0C"
+                android:textSize="17sp"></TextView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cardbgview"
+        android:layout_below="@id/generalPrefer"
+        android:layout_toEndOf="@+id/healthPrefer"
+        android:layout_margin="6dp"
+        android:id="@+id/entertainmentPrefer"
+        android:layout_toRightOf="@+id/healthPrefer">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txtEntertainment"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="@font/candal"
+                android:gravity="center_horizontal"
+                android:text="Entertainment"
+                android:textAlignment="center"
+                android:textColor="#0C0C0C"
+                android:textSize="17sp"></TextView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:id="@+id/sciencePrefer"
+        android:background="@drawable/cardbgview"
+        android:layout_below="@id/healthPrefer"
+        android:layout_margin="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="7dp"
+                android:id="@+id/txtScience"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="@font/candal"
+                android:gravity="center_horizontal"
+                android:text="Science"
+                android:textAlignment="center"
+                android:textColor="#0C0C0C"
+                android:textSize="17sp"></TextView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:fontFamily="@font/marko_one"
+        android:text="Set Preferences"
+        android:textAllCaps="false"
+        android:background="#0C6C3C"
+        android:padding="5dp"
+        android:textColor="#FFF"
+        android:id="@+id/preferringSetBtn"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp">
+    </Button>
+
+</RelativeLayout>

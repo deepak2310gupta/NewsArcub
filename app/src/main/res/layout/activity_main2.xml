@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/newsFirstSplashLogo"
+        android:src="@mipmap/ic_launcherfirstlogo">
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/newsFirstSplashLogo"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/NewsTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/croissant_one"
+            android:paddingTop="10dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="10dp"
+            android:text="News"
+            android:textColor="#F87E37"
+            android:textStyle="bold"
+            android:textSize="39sp" />
+        <TextView
+            android:id="@+id/Arcubtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/NewsTxt"
+            android:layout_toRightOf="@id/NewsTxt"
+            android:fontFamily="@font/croissant_one"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textStyle="bold"
+            android:text="Arcub"
+            android:textSize="39sp"></TextView>
+    </LinearLayout>
+
+</RelativeLayout>

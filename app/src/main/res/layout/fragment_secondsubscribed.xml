@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SecondsubscribedFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="290dp"
+        android:layout_height="330dp"
+        app:cardCornerRadius="50dp"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        app:cardMaxElevation="@dimen/cardview_compat_inset_shadow"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardElevation="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/subscriptionnew"
+                android:padding="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="130dp">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/mallanna"
+                android:text="1 Year"
+                android:textColor="#453737"
+                android:textSize="30dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/headland_one"
+                android:text="Rs 1199"
+                android:textColor="#A6E65B"
+                android:textSize="25sp"
+                android:textStyle="bold"></TextView>
+
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/subscribedbtn"
+                android:fontFamily="@font/arvo_bold"
+                android:text="SUBSCRIBE"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"></Button>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="260dp"
+            android:background="@drawable/draw1"
+            android:id="@+id/naview1"></View>
+        <View
+            android:layout_width="15dp"
+            android:layout_height="100dp"
+            android:layout_toEndOf="@+id/naview1"
+            android:id="@+id/naview2"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/draw2"
+            android:layout_toRightOf="@+id/naview1"></View>
+        <View
+            android:layout_width="15dp"
+            android:layout_height="190dp"
+            android:layout_toEndOf="@+id/naview2"
+            android:id="@+id/naview3"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/draw3"
+            android:layout_toRightOf="@+id/naview2"></View>
+        <View
+            android:layout_width="15dp"
+            android:layout_height="150dp"
+            android:layout_toEndOf="@+id/naview3"
+            android:id="@+id/naview4"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/draw4"
+            android:layout_toRightOf="@+id/naview3"></View>
+        <View
+            android:layout_width="15dp"
+            android:layout_height="120dp"
+            android:layout_toEndOf="@+id/naview4"
+            android:id="@+id/naview5"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/draw5"
+            android:layout_toRightOf="@+id/naview4"></View>
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/newsFirstSplashLogo"
+        android:src="@mipmap/ic_launcherfirstlogo">
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/newsFirstSplashLogo"
+        android:layout_centerHorizontal="true">
+    <TextView
+        android:id="@+id/NewsTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/croissant_one"
+        android:paddingTop="10dp"
+        android:paddingRight="3dp"
+        android:paddingBottom="10dp"
+        android:text="News"
+        android:textColor="#F87E37"
+        android:textStyle="bold"
+        android:textSize="39sp" />
+    <TextView
+        android:id="@+id/Arcubtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/NewsTxt"
+        android:layout_toRightOf="@id/NewsTxt"
+        android:fontFamily="@font/croissant_one"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textStyle="bold"
+        android:text="Arcub"
+        android:textSize="39sp"></TextView>
+    </LinearLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="170dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_rawRes="@raw/loadone"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+
+</RelativeLayout>

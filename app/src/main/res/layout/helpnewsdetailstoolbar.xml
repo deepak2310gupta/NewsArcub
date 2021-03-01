@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#E8E1E1"
+    android:layout_height="50dp">
+
+
+
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:background="@null"
+        android:layout_margin="5dp"
+        android:id="@+id/nextBackBtn100"
+        android:src="@drawable/ic_arrow_back_black_24dp">
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/NewsTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/nextBackBtn100"
+        android:fontFamily="@font/croissant_one"
+        android:text="News"
+        android:layout_margin="7dp"
+        android:textColor="#F87E37"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/nextBackBtn100" />
+
+    <TextView
+        android:id="@+id/Arcubtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/NewsTxt"
+        android:layout_toRightOf="@id/NewsTxt"
+        android:fontFamily="@font/croissant_one"
+        android:textStyle="bold"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="7dp"
+        android:text="Arcub"
+        android:textSize="20sp"></TextView>
+
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="23dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/share"
+        android:layout_margin="12dp"
+        android:id="@+id/shareBtnhndt"
+        android:layout_alignParentRight="true">
+    </ImageView>
+
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="23dp"
+        android:src="@drawable/ic_format_size_black_24dp"
+        android:layout_margin="12dp"
+        android:id="@+id/format"
+        android:layout_toStartOf="@+id/shareBtnhndt"
+        android:layout_toLeftOf="@+id/shareBtnhndt">
+    </ImageView>
+
+
+
+
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="23dp"
+        android:src="@drawable/volume"
+        android:layout_margin="12dp"
+        android:id="@+id/txtToSpeechNewsBtn"
+        android:layout_toStartOf="@+id/format"
+        android:layout_toLeftOf="@+id/format">
+    </ImageView>
+
+
+
+
+</RelativeLayout>

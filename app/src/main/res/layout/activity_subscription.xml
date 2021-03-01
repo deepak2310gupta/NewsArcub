@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubscriptionActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/txtTheNewsArcub"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/subscriptionBackBtn"
+            android:src="@drawable/ic_chevronorangeleft"
+            android:layout_margin="15dp"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="55dp"
+            android:fontFamily="@font/arvo_bold"
+            android:padding="2dp"
+            android:id="@+id/theSubscriptionnewsarcubTxt"
+            android:text="The News Arcub"
+            android:textColor="#165C87"
+            android:textSize="32sp"
+            android:textStyle="bold"></TextView>
+    </RelativeLayout>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtTheNewsArcub">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:id="@+id/PagerViewSubscription"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="#FFFFFF"
+            android:layout_height="365dp">
+
+            </androidx.viewpager.widget.ViewPager>
+
+
+
+            <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtWhatsonSubscription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/baloo_da"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="What's only on Subscription ?"
+                    android:textAlignment="center"
+                    android:textColor="#614A3D"
+                    android:textSize="27sp"
+                    android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtWhatsonSubscription"
+                android:orientation="vertical">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <ImageView
+                       android:layout_width="80dp"
+                       android:layout_height="70dp"
+                       android:src="@drawable/briefcase"
+                       android:layout_margin="8dp"
+                       android:layout_gravity="center_vertical">
+                   </ImageView>
+
+                   <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:orientation="vertical">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/hammersmith_one"
+                           android:text="Briefing"
+                           android:textColor="#165C87"
+                           android:textSize="22sp"
+                           android:textStyle="bold"></TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stay on top of the news! We brief you on the latest and most important developments three times a day"
+                        android:textColor="#F3B956"
+                        android:textStyle="bold"
+                        android:textSize="14sp"></TextView>
+
+
+                </LinearLayout>
+
+               </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/newspapersubsc"
+                        android:layout_margin="8dp"
+                        android:layout_gravity="center_vertical">
+                    </ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hammersmith_one"
+                        android:text="My Stories"
+                        android:textColor="#165C87"
+                        android:textSize="22sp"
+                        android:textStyle="bold"></TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Top articles from the topics of interest selected by you"
+                        android:textColor="#F3B956"
+                        android:textStyle="bold"
+                        android:textSize="14sp"></TextView>
+
+
+                </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/suggestion"
+                        android:layout_margin="8dp"
+                        android:layout_gravity="center_vertical">
+                    </ImageView>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hammersmith_one"
+                        android:text="Recomendations"
+                        android:textColor="#165C87"
+                        android:textSize="22sp"
+                        android:textStyle="bold"></TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Articles specially selected for you by an automated analysis of your reading patterns"
+                        android:textColor="#F3B956"
+                        android:textStyle="bold"
+                        android:textSize="14sp"></TextView>
+
+
+                </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_margin="8dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/blocked"
+                        android:layout_gravity="center_vertical">
+                    </ImageView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hammersmith_one"
+                        android:text="Ad Free Experience"
+                        android:textColor="#165C87"
+                        android:textSize="22sp"
+                        android:textStyle="bold"></TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enjoy reading our articles without intrusion from advertismnets"
+                        android:textColor="#F3B956"
+                        android:textStyle="bold"
+                        android:textSize="14sp"></TextView>
+
+
+                </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_margin="8dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/imgboost"
+                        android:background="@null"
+                        android:layout_gravity="center_vertical">
+                    </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hammersmith_one"
+                        android:text="Faster Page Loads"
+                        android:textColor="#165C87"
+                        android:textSize="22sp"
+                        android:textStyle="bold"></TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Move smoothly beween articles as our pages load instantly"
+                        android:textColor="#F3B956"
+                        android:textStyle="bold"
+                        android:textSize="14sp"></TextView>
+
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#30F381"
+    tools:context=".SignupinFragment">
+
+    <ImageButton
+        android:id="@+id/signupBackBtn"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@null"
+        android:src="@drawable/ic_newleft"
+        android:visibility="gone"></ImageButton>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="730dp"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/signupBackBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="730dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/zerolin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+
+                    android:padding="3dp"
+                    android:text="News"
+
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="#F87E37"
+                    android:fontFamily="@font/croissant_one"></TextView>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:src="@mipmap/ic_launcherfirstlogo">
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:padding="3dp"
+                    android:text="Arcub"
+                    android:textColor="#857B75"
+                    android:fontFamily="@font/croissant_one"
+                    android:textSize="30sp"
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/firstlin001"
+                android:layout_below="@+id/zerolin"
+                android:layout_marginTop="23dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/signupbg12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/signupbg"
+                    android:fontFamily="@font/almendra_bold"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Sign Up"
+                    android:textAlignment="center"
+                    android:textColor="#FFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/signinbg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/almendra_bold"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Sign In"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="22sp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstlin001"
+                android:visibility="gone"
+                android:id="@+id/secondHelpLayout"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/userEmailId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/firstlin001"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/emailback"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/andada"
+                    android:hint="Enter your Email Id"
+                    android:inputType="textWebEmailAddress"
+                    android:padding="12dp"
+                    android:textColor="#272424"></EditText>
+
+                <EditText
+                    android:id="@+id/userPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/userEmailId"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/emailback"
+                    android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/andada"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="12dp"></EditText>
+
+
+                <Button
+                    android:id="@+id/signingIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/HelpLayouut"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/signupbg"
+                    android:fontFamily="@font/boogaloo"
+                    android:text="Sign In"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"></Button>
+
+                <TextView
+                    android:id="@+id/txtForgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/paytone_one"
+                    android:gravity="center_horizontal"
+                    android:text="Forgot Password"
+                    android:textAlignment="center"
+                    android:textColor="#E31D3B"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:id="@+id/HelpLayouut"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="7dp"
+                android:layout_below="@id/firstlin001"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/emailback"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/andada"
+                    android:hint="Name"
+                    android:id="@+id/txtName00"
+                    android:inputType="textPersonName|textNoSuggestions"
+                    android:padding="10dp"></EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/emailback"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/txtEmail00"
+                    android:fontFamily="@font/andada"
+                    android:hint="Email Id"
+                    android:inputType="textEmailAddress|textNoSuggestions"
+                    android:padding="10dp"></EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/emailback"
+                    android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/andada"
+                    android:hint="Password"
+                    android:id="@+id/txtPassword00"
+                    android:inputType="textPassword"
+                    android:padding="10dp"></EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/emailback"
+                    android:drawableLeft="@drawable/ic_phone_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/andada"
+                    android:hint="Mobile Number"
+                    android:id="@+id/txtMobile00"
+                    android:inputType="phone"
+                    android:padding="10dp"></EditText>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/signupbg"
+                android:layout_below="@id/HelpLayouut"
+                android:fontFamily="@font/boogaloo"
+                android:text="Sign Up for Free Trial"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="22sp"
+                android:id="@+id/buttonSignUp"
+                android:textStyle="bold"></Button>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="@font/vollkorn"
+                android:layout_below="@id/buttonSignUp"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:id="@+id/txtSignupUserProfiles"
+                android:layout_marginTop="18dp"
+                android:textAlignment="center"
+                android:text="or Sign up using Social profiles"
+                android:gravity="center_horizontal"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_below="@+id/txtSignupUserProfiles"
+                android:layout_marginTop="10dp"
+                android:id="@+id/thirdLin003"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/facebook"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp"
+                    android:padding="3dp">
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/twitter"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:padding="3dp">
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/google"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp"
+                    android:padding="3dp">
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+
+
+            </LinearLayout>
+            <CheckBox
+                android:id="@+id/firstCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thirdLin003"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="32dp"></CheckBox>
+            <TextView
+                android:id="@+id/iagreeforsign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thirdLin003"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/firstCheckbox"
+                android:layout_toRightOf="@+id/firstCheckbox"
+                android:fontFamily="@font/vollkorn"
+                android:padding="2dp"
+                android:text=" I authorize The News Arcub to sign me up for marketing communications and newsletters"
+                android:textSize="15sp"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chelsea_market"
+                android:gravity="center_horizontal"
+                android:text="By signing up, you agree to our"
+                android:textAlignment="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/iagreeforsign"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:id="@+id/txtagree"
+                android:textSize="15sp"></TextView>
+
+            <TextView
+                android:id="@+id/trmsconditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtagree"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/hammersmith_one"
+                android:gravity="center_horizontal"
+                android:text="Terms and Conditions"
+                android:textAlignment="center"
+                android:textColor="#293EA3"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

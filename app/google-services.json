@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "191711697518",
+    "firebase_url": "https://newsarcub-default-rtdb.firebaseio.com",
+    "project_id": "newsarcub",
+    "storage_bucket": "newsarcub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191711697518:android:708bde2026f88afc2aa47f",
+        "android_client_info": {
+          "package_name": "com.example.newsarcub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191711697518-9n1b20oem1garqjgnq2je7agq0ke8081.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.newsarcub",
+            "certificate_hash": "52f8519769759fccc551038c3072c6e8073e023b"
+          }
+        },
+        {
+          "client_id": "191711697518-qfga76vg2f7c64bnkjololghe7diumuc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBolw9nXfk7oehq13LJ-Z1B6bSMFBcr-Wg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191711697518-qfga76vg2f7c64bnkjololghe7diumuc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

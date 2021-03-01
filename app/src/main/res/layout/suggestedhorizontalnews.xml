@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:id="@+id/suggestedNewsHorizontalcardView"
+    android:layout_height="150dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="1dp">
+
+
+        <TextView
+            android:id="@+id/newsCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:fontFamily="@font/arbutus_slab"
+            android:text="Category"
+            android:textColor="#095DA6"
+            android:visibility="gone"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/newsSuggestedTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newsCategory"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toStartOf="@id/newsImageLogo"
+            android:layout_toLeftOf="@id/newsImageLogo"
+            android:fontFamily="@font/patua_one"
+            android:maxLines="3"
+            android:padding="1dp"
+            android:text="India's first Oscar Winner Bhanu Athaiya dies in Mumbai home"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"></TextView>
+
+        <ImageView
+            android:layout_width="88dp"
+            android:layout_height="85dp"
+            android:id="@+id/newsImageLogo"
+            android:layout_margin="8dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/xyzperson"
+            android:scaleType="centerCrop"
+            android:layout_alignParentRight="true">
+        </ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oct 15, 2020 07:18 PM IST"
+            android:id="@+id/SuggestedNewstime"
+            android:textSize="14sp"
+            android:layout_below="@+id/suggestedSourceNews"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp">
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Special Correspondent"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:id="@+id/suggestedSourceNews"
+            android:layout_below="@+id/newsImageLogo"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp">
+        </TextView>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:layout_margin="2dp"
+            android:layout_below="@id/newsImageLogo"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_star_border">
+            </ImageView>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_bookmark_border_blacknew">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/readFewerstories"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/remove"></ImageView>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
